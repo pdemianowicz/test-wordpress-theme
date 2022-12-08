@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4 {
+  color: #23272a;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: $gray-200;
+  }
+}
+
+.navbar {
+  padding: 2.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+  & .container {
+    flex-wrap: nowrap;
+  }
+}
+
+.custom-logo {
+  width: 15rem;
+}
+
+.socials-nav {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+
+  li {
+    padding: 0 1rem;
+    &:last-child {
+      margin-left: 1.5rem;
+      padding: 0 1.25rem;
+      border-left: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    a {
+      color: $black;
+      &:hover {
+        transition: color 150ms ease-in-out;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border: 0;
+  z-index: 9999;
+  &:focus {
+    border: 0;
+    box-shadow: 0 0 0 0.1rem;
+  }
+}
+
+.navbar-collapse {
+  // position: fixed;
+  // inset: 0;
+  // background-color: aqua;
+  text-align: center;
+}
+
+// .navbar-nav {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+.nav-link {
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.site-footer {
+  color: #bbbbbb;
+  background-color: #161717;
+
+  & .site-footer-bottom {
+    width: 100%;
+    display: inline-flex;
+
+    & p {
+      font-size: 14px;
+      margin: 0;
+      padding: 1.5rem 0;
+    }
+
+    & span {
+      padding: 0 0.5rem;
+    }
+  }
+}

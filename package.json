@@ -1,0 +1,16 @@
+{
+  "name": "sass-compile",
+  "version": "1.0.1",
+  "description": "A simple sass compile config.",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --no-source-map --style=compressed  sass/main.scss:css-output/bundle.css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
